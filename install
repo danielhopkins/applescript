@@ -1,5 +1,14 @@
 #!/bin/bash
 bindir=$(dirname $0)
 homefilesdir=$(cd $(dirname $bindir) && pwd)
-echo $homefilesdir
-ln -sf $homefilesdir/Scripts ~/Library/Scripts
+
+# Make the Library visible
+
+/usr/bin/osascript <<-EOF
+tell application "Finder"
+set newAlias to make new alias of folder "folderLibrary" of home to folder "Scripts" of folder "applescripts" of folder "Dropbox" of home
+set name of newAlias to "Scripts"
+end tell
+EOF
+
+# Make the Library invisible again
