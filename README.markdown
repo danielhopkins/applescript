@@ -1,5 +1,10 @@
 This is a collection of Apple scripts. I've been running using [fastscripts](http://www.red-sweater.com/fastscripts/) to map key commands to different scripts.
 
+## Installation ##
+Copy, or alias the Scripts directory into your Library directory. ~/Library/Scripts is a special directory, it is picked up by the normal script menu and by fast scripts.
+
+The included install bash script aliases the directory into the Library because symlinks don't work with fast scripts ([known bug](http://www.red-sweater.com/forums/discussion/1274/mobileme-syncing-of-fastscripts-settings-and-scripts/p1)).
+
 ## Archive message ##
 I started using this in my quest for zero inbox in Mail.app 5.0. This script moves messags out of the inbox and to "All Mail", which effectively archives.
 
