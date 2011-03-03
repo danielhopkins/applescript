@@ -1,0 +1,5 @@
+#!/bin/bash
+bindir=$(dirname $0)
+homefilesdir=$(cd $(dirname $bindir) && pwd)
+echo $homefilesdir
+ln -sf $homefilesdir/Scripts ~/Library/Scripts
