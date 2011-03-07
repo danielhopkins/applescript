@@ -10,11 +10,12 @@ I started using this in my quest for zero inbox in Mail.app 5.0. This script mov
 
 ### todo ###
     - Get rid of hard coded links, otherwise people have to fix the script and it won't work in a multi-account environment.
+    - When you archive a file it tends to get stuck, like the folder needs to get refreshed
+    - There are some times errors if you move the selection around
+    - Perfomance? Woah.
 
 ## Other script ideas ##
     - Coffee shop mode: locks down the computer
-        - turns on firewall and stealth mode
-        - disable sharing
         - turn on a password protect screen saver
-    - Public mode: does the opposite of coffee shop mode
+    - Word mode: does the opposite of coffee shop mode
     - Mark as gmail spam: moves to spam folder, similar to archive script
